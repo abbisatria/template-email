@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -11,6 +13,7 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
     }
+
     body {
       width: 100% !important;
       height: 100%;
@@ -20,6 +23,7 @@
       color: #839197;
       -webkit-text-size-adjust: none;
     }
+
     a {
       color: #414EF9;
     }
@@ -31,6 +35,7 @@
       padding: 0;
       background-color: #F5F7F9;
     }
+
     .email-content {
       width: 100%;
       margin: 0;
@@ -42,6 +47,7 @@
       padding: 25px 0;
       text-align: center;
     }
+
     .email-masthead_logo {
       max-width: 200px;
       border: 0;
@@ -56,31 +62,37 @@
       border-bottom: 1px solid #E7EAEC;
       background-color: #FFFFFF;
     }
+
     .email-body_inner {
       width: 570px;
       margin: 0 auto;
       padding: 0;
     }
+
     .email-footer {
       width: 570px;
       margin: 0 auto;
       padding: 0;
       text-align: center;
     }
+
     .email-footer p {
       color: #839197;
     }
+
     .body-action {
       width: 100%;
       margin: 30px auto;
       padding: 0;
       text-align: center;
     }
+
     .body-sub {
       margin-top: 25px;
       padding-top: 25px;
       border-top: 1px solid #E7EAEC;
     }
+
     .content-cell {
       padding: 35px;
     }
@@ -93,6 +105,7 @@
       font-weight: bold;
       text-align: left;
     }
+
     p {
       margin-top: 0;
       color: #839197;
@@ -100,9 +113,11 @@
       line-height: 1.5em;
       text-align: left;
     }
+
     p.sub {
       font-size: 12px;
     }
+
     p.center {
       text-align: center;
     }
@@ -113,25 +128,28 @@
       width: 200px;
       background-color: #414EF9;
       border-radius: 3px;
-      color: #ffffff;
+      color: #ffffff !important;
       font-size: 15px;
       line-height: 45px;
       text-align: center;
       text-decoration: none;
       -webkit-text-size-adjust: none;
     }
+
     .button--blue {
       background-color: #414EF9;
-      color: #ffffff;
+      color: #ffffff !important;
     }
 
     /*Media Queries ------------------------------ */
     @media only screen and (max-width: 600px) {
+
       .email-body_inner,
       .email-footer {
         width: 100% !important;
       }
     }
+
     @media only screen and (max-width: 500px) {
       .button {
         width: 100% !important;
@@ -139,6 +157,7 @@
     }
   </style>
 </head>
+
 <body>
   <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
     <tr>
@@ -157,19 +176,32 @@
                 <!-- Body content -->
                 <tr>
                   <td class="content-cell">
-                    <h1>Hallo Abbi</h1>
-                    <p>Selamat anda telah terdaftar sebagai calon siswa Syntechsia Academy, langkah selanjutnya anda harus membayar sebesar <b>Rp. 250.000</b>.</p>
-                    <ol>
-                      <li>Rp. 200.000 (Deposito)</li>
-                      <li>Rp. 50.000 (Biaya Admin)</li>
+                    <h1>Halo, {student_name}</h1>
+                    <p>Selamat anda telah terdaftar sebagai calon siswa Syntechsia Academy dengan program {program}. </p>
+                    <p>Silahkan membayar sebesar <b>Rp. 200.000</b> untuk mengikuti kelas tersebut.</p>
+                    <ol style="padding-left: 20px;">
+                      <li>Rp. 150.000 (Deposito)</li>
+                      <li>Rp. 50.000 (Biaya Pendaftaran)</li>
                     </ol>
-                    <p>Silahkan transfer ke rekening: 123345343 (Jafar Shodiq)</p>
+                    <p>Silahkan transfer ke rekening:</p>
+                    <ul style="padding-left: 20px;">
+                      <li>
+                        <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                          <p id="myInput" style="margin-bottom: 0; margin-right: 3px;">12334534312312</p>(Muhammad Jafar Shodiq | BCA)
+                          <button onclick="myFunction()" style="margin-left: 5px;background-color: #414EF9; padding: 5px;border: 0px;color: #FFFFFF;border-radius: 3px;">
+                            Copy
+                          </button>
+                        </div>
+                      </li>
+                      <li>Catatan / Additional : NIK - Nama</li>
+                    </ul>
                     <!-- Action -->
                     <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
                       <tr>
                         <td align="center">
                           <div>
-                            <a href="https://api.whatsapp.com/send?phone=628988116753&text=Halo,%20Kak%20saya%20sudah%20melakukan%20pembayaran%20pada%20rekening%20Syntechsia" class="button button--blue">Konfirmasi Pembayaran</a>
+                            <a href="https://api.whatsapp.com/send?phone=628988116753&text=Halo,%20Kak%20saya%20sudah%20melakukan%20pembayaran%20pada%20rekening%20Syntechsia"
+                              class="button button--blue">Konfirmasi Pembayaran</a>
                           </div>
                         </td>
                       </tr>
@@ -180,7 +212,8 @@
                       <tr>
                         <td>
                           <p class="sub">
-                            NOTE: Mohon konfirmasi melalui Whatsapp yang terdapat pada tombol diatas dengan memberikan bukti transfer.
+                            NOTE: Mohon konfirmasi melalui Whatsapp yang terdapat pada tombol diatas dengan memberikan
+                            bukti transfer.
                           </p>
                           <p class="sub"><a href="https://syntechsia.netlify.app/">Syntechsia Academy</a></p>
                         </td>
@@ -208,5 +241,33 @@
       </td>
     </tr>
   </table>
+  <script>
+    function myFunction() {
+      var range, selection, worked;
+
+      var copyText = document.getElementById("myInput")
+
+      if (document.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(copyText);
+        range.select();
+      } else if (window.getSelection) {
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents(copyText);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+
+      try {
+        document.execCommand('copy');
+        alert('Nomor Rekening Berhasil di copy')
+      }
+      catch (err) {
+        alert('copy rekening gagal');
+      }
+    }
+  </script>
 </body>
+
 </html>
