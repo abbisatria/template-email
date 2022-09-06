@@ -166,7 +166,7 @@
           <!-- Logo -->
           <tr>
             <td class="email-masthead">
-              <img src="./logo.png" alt="Logo" class="email-masthead_logo" />
+              <img src="https://i.ibb.co/Qnzv3Rj/syntechsia.png" alt="Logo" class="email-masthead_logo" />
             </td>
           </tr>
           <!-- Email Body -->
@@ -176,8 +176,8 @@
                 <!-- Body content -->
                 <tr>
                   <td class="content-cell">
-                    <h1>Halo, {student_name}</h1>
-                    <p>Selamat anda telah terdaftar sebagai calon siswa Syntechsia Academy dengan program {program}. </p>
+                    <h1>Halo, {STUDENT_NAME}</h1>
+                    <p>Selamat anda telah terdaftar sebagai calon siswa Syntechsia Academy dengan program {PROGRAM_NAME}. </p>
                     <p>Silahkan membayar sebesar <b>Rp. 200.000</b> untuk mengikuti kelas tersebut.</p>
                     <ol style="padding-left: 20px;">
                       <li>Rp. 150.000 (Deposito)</li>
@@ -186,14 +186,9 @@
                     <p>Silahkan transfer ke rekening:</p>
                     <ul style="padding-left: 20px;">
                       <li>
-                        <div style="display: flex; align-items: center; flex-wrap: wrap;">
-                          <p id="myInput" style="margin-bottom: 0; margin-right: 3px;">12334534312312</p>(Muhammad Jafar Shodiq | BCA)
-                          <button onclick="myFunction()" style="margin-left: 5px;background-color: #414EF9; padding: 5px;border: 0px;color: #FFFFFF;border-radius: 3px;">
-                            Copy
-                          </button>
-                        </div>
+                        1091986758 (Muhammad Jafar Shodiq | BCA)
                       </li>
-                      <li>Catatan / Additional : NIK - Nama</li>
+                      <li>Catatan / Additional : {NIK} - {STUDENT_NAME}</li>
                     </ul>
                     <!-- Action -->
                     <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
@@ -241,33 +236,6 @@
       </td>
     </tr>
   </table>
-  <script>
-    function myFunction() {
-      var range, selection, worked;
-
-      var copyText = document.getElementById("myInput")
-
-      if (document.body.createTextRange) {
-        range = document.body.createTextRange();
-        range.moveToElementText(copyText);
-        range.select();
-      } else if (window.getSelection) {
-        selection = window.getSelection();
-        range = document.createRange();
-        range.selectNodeContents(copyText);
-        selection.removeAllRanges();
-        selection.addRange(range);
-      }
-
-      try {
-        document.execCommand('copy');
-        alert('Nomor Rekening Berhasil di copy')
-      }
-      catch (err) {
-        alert('copy rekening gagal');
-      }
-    }
-  </script>
 </body>
 
 </html>
